@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EletrixOS - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 15px;
+        }
+        nav ul li a:hover {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+        #hero {
+            padding: 50px;
+            background: linear-gradient(to right, #ff8c00, #ff2e63);
+        }
+        button {
+            background-color: #ff8c00;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff2e63;
+        }
+        section {
+            padding: 40px;
+        }
+        #features ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #features ul li {
+            background-color: #1f1f1f;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+        #features ul li:hover {
+            background-color: #ff8c00;
+        }
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚡ EletrixOS</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Welcome to EletrixOS</h2>
+        <h4>
+        (V0.0.1 CodeName : Fish)
+        </h4>
+        <p>A modern, lightweight, opensource and powerful operating system.</p>
+        <button onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section id="about">
+        <h2>About EletrixOS</h2>
+        <p>EletrixOS is a fast and customizable OS designed for developers and power users.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>🚀 Fast and lightweight</li>
+            <li>🎨 Based on KDE.</li>
+            <li>🔒 Secure and open-source</li>
+            <li>⚙️ Include our custom package manager: <strong>arcpkg</strong>.</li>
+        </ul>
+    </section>
+
+    <section id="download">
+        <h2>Download EletrixOS KDE Version</h2>
+        <p>Get the latest version of EletrixOS with KDE, a fast, powerful, and customizable desktop environment.</p>
+        <button onclick="download()">Download Now</button>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Follow us on GitHub or contact us for more info.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EletrixOS/Crypt. All rights reserved.</p>
+    </footer>
+
+    <script>
+    function learnMore(){ 
+        document.location.href = 'https://github.com/eletrixos';
+    }
+
+    function download() {
+        window.location.href = 'https://github.com/eletrixos/build';  
+    }
+    </script>
+</body>
+</html>
